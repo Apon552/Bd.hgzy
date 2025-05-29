@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* CSS (style.css) code starts here */
+        body {
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(to right, #ff6b6b, #ff4d4d);
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .back-arrow {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .logo {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .language {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .language img {
+            width: 20px;
+            margin-right: 5px;
+        }
+
+        .login-section {
+            padding: 20px;
+        }
+
+        .login-section h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .login-section p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px 0;
+            cursor: pointer;
+            color: #888;
+            position: relative;
+        }
+
+        .tab.active {
+            color: #ff4d4d;
+        }
+
+        .tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #ff4d4d;
+        }
+
+        .tab i {
+            margin-right: 5px;
+        }
+
+        .promo-text {
+            background-color: #ffeaea;
+            color: #ff4d4d;
+            border: 1px solid #ffcccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .input-group input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #ff4d4d;
+        }
+
+        .phone-input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .phone-input-group select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+            height: 42px;
+        }
+
+        .phone-input-group input {
+            flex-grow: 1;
+            width: auto;
+        }
+
+        .password-input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .password-input-wrapper input {
+            width: 100%;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+            color: #888;
+        }
+
+        .remember-password {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .remember-password input {
+            margin-right: 8px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-btn {
+            background: linear-gradient(to right, #ff6b6b, #ff4d4d);
+            color: white;
+        }
+
+        .login-btn:hover {
+            background: linear-gradient(to right, #ff4d4d, #ff6b6b);
+        }
+
+        .register-btn {
+            background-color: #f0f2f5;
+            color: #ff4d4d;
+            border: 1px solid #ff4d4d;
+        }
+
+        .register-btn:hover {
+            background-color: #ffeaea;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .footer-item {
+            text-align: center;
+            color: #888;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .footer-item i {
+            display: block;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .chat-icon img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Body content omitted for brevity -->
+</body>
+</html>
